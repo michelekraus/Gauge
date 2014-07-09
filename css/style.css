@@ -1,0 +1,92 @@
+body {
+	background-color: #FC9A8B;
+	
+}
+
+h1, h2 {
+
+	font-family: 'Droid Serif', serif;
+	color: #fff;
+
+}
+
+h1 {
+
+	font-size: 2.5em;
+}
+
+input {
+  display: block;
+  width: 300px;
+  height: 20px;
+  margin: 5px auto;
+
+}
+
+input:focus {
+	outline: none;
+	background-color: #ddd;
+}
+
+#main {
+  margin: 20px auto;
+  width: 500px;
+  text-align: center;
+  border: 1px solid white;
+  background-color: #F56D58;
+}
+
+#submit {
+  display: block;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  width: 100px;
+  margin: 15px auto 30px auto;
+  padding: 5px;
+	font-family: 'Droid Serif', serif;
+	font-size: 1em;
+	color: #555;
+	height: auto;
+}
+
+#submit:hover {
+	background-color: #ddd;
+	color: #333;
+}
+
+#submit:active {
+	background-color: #555;
+	color: #ddd;
+	border: none;
+}
+
+
+#solution {
+	display: block;
+	/*margin: 30px;*/
+	height: 60px;
+	font-family: 'Droid Serif', serif;
+	color: #fff;
+}
+
+
+/*placeholder text*/
+::-webkit-input-placeholder {
+  font-family: 'Droid Serif', serif;
+  color:#555;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-family: 'Droid Serif', serif;
+   color:#555; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-family: 'Droid Serif', serif;
+   color:#555; 
+}
+
+:-ms-input-placeholder {  
+   font-family: 'Droid Serif', serif;
+   color:#555;  
+}
