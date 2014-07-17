@@ -12,13 +12,17 @@
   <section id="main">
     <h1>Gauge Calculator</h1>
     <form id="calculator">
+    <input type="radio" name="units" value="inch" id="inch" placeholder="">inch
+    <input type="radio" name="units" value="cm" id="cm" placeholder="">cm
     <h2>Swatch Stitches/Rows</h2>
       <input type="text" id="stitches" name="" value="" placeholder="stitches">
       <input type="text" id="rows" name="" value="" placeholder="rows">
     <h2>Swatch Measurement</h2>
-      <input type="text" id="width" name="" value="" placeholder="width">
-      <input type="text" id="length" name="" value="" placeholder="length">
-      <input class="submit" id="submit" type="submit" name="" value="Get Gauge">
+      <input class="text" type="text" id="width" name="" value="" placeholder="width">
+      <input class="text" type="text" id="length" name="" value="" placeholder="length">
+      <br>
+      <input class="submit btn btn-default" id="submit" type="submit" name="" value="Get Gauge">
+      <input class="submit btn btn-default" type="reset" name="" value="Clear">
     </form>
     <h2>Gauge:</h2>
     <div id="solution">
