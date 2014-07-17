@@ -31,6 +31,17 @@ $(document).ready(function(){
     var rows = parseInt($(this).find('#rows').val());
     var length = parseInt($(this).find('#length').val());
     var width = parseInt($(this).find('#width').val());
+
+    if(document.getElementById('inch').checked) {
+    //inch radio button is checked
+    var units = "inch";
+    }
+    
+    else if(document.getElementById('cm').checked) {
+    //cm radio button is checked
+    var units = "cm";
+    }
+
     // alert (values);
     if (isNaN(stitches) || isNaN(rows) || isNaN(length) || isNaN(width)){
       $('#solution').html("Please enter valid input");
@@ -39,11 +50,17 @@ $(document).ready(function(){
       var numStitches = Math.round(stitches / width*10)/10;
       var numRows = Math.round(rows / length*10)/10;
 
-      $('#solution').html( numStitches + " stitches and " + numRows + " rows per inch.");
+      $('#solution').html( numStitches + " stitches and " + numRows + " rows per " + units);
     }
-  });
-  
 
-
+   
 })
+  $(function() {
+    $( document ).tooltip();
+  
+   $( "#stitches" ).tooltip({ content: "Awesome title!" });
+  });
+});
+
+
 
