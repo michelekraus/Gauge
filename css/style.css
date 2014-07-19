@@ -57,10 +57,11 @@ input:focus {
 
 #solution {
 	display: block;
-	/*margin: 30px;*/
+	margin: 30px;
 	height: 60px;
 	font-family: 'Droid Serif', serif;
 	color: #fff;
+  font-size: 1.6em;
 }
 
 
