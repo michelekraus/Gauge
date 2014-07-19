@@ -24,6 +24,8 @@
 // });
 $(document).ready(function(){
 
+  $("#solution").hide();
+
   $("#calculator").submit(function(event) {
     event.preventDefault();
     // Get all the forms elements and their values in one step
@@ -31,6 +33,8 @@ $(document).ready(function(){
     var rows = parseInt($(this).find('#rows').val());
     var length = parseInt($(this).find('#length').val());
     var width = parseInt($(this).find('#width').val());
+
+    
 
     if(document.getElementById('inch').checked) {
     //inch radio button is checked
@@ -44,23 +48,22 @@ $(document).ready(function(){
 
     // alert (values);
     if (isNaN(stitches) || isNaN(rows) || isNaN(length) || isNaN(width)){
+      $("#solution").show("slow");
       $('#solution').html("Please enter valid input");
     }
     else {
       var numStitches = Math.round(stitches / width*10)/10;
       var numRows = Math.round(rows / length*10)/10;
-
-      $('#solution').html( numStitches + " stitches and " + numRows + " rows per " + units);
+      $("#solution").show("slow");
+      $("#solution").html( numStitches + " stitches and " + numRows + " rows per " + units);
     }
 
    
-})
-  $(function() {
-    $( document ).tooltip();
-  
-   $( "#stitches" ).tooltip({ content: "Awesome title!" });
-  });
+  })
+
+
+
 });
 
-
+  
 
